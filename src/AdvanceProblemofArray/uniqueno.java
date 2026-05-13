@@ -9,7 +9,7 @@ public class uniqueno {
         return xorSum;
     }
     public static void main(String[] args) {
-        int [] num ={2,3,5,4,5,3,4};
+        int [] num ={2, 3, 5, 4, 5, 4, 3};
         System.out.println(FindUniqueElement(num));
     }
 }
