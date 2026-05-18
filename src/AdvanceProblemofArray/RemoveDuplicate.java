@@ -3,7 +3,7 @@ package AdvanceProblemofArray;
 import java.lang.reflect.Array;
 
 public class RemoveDuplicate {
-    public static int[] getDuplicateElement(int[]nums){
+    public static int getDuplicateElement(int[]nums){
         int i=0;
         int j=1;
         int n = nums.length;
@@ -20,6 +20,11 @@ public class RemoveDuplicate {
     }
     public static void main(String[] args) {
         int [] nums ={1,2,2,2,3,4,4,5};
-        System.out.println(Array.set(getDuplicateElement(int[]nums)));
+        int uniqueCount = getDuplicateElement(nums);
+        System.out.println("Unique elements:" + uniqueCount);
+
+        for (int k=0; k<uniqueCount; k++){
+            System.out.print(nums[k] + " ");
+        }
     }
 }
